@@ -42,3 +42,15 @@ http://sqlbak.com
 Click [here][id]
 [id]:https://naver.com
 
+>blockquote text
+
+'''python
+print('hello');
+'''
+
+'inline_code();'
+
+![alt text](logo.png "Title")
+
+![][id]
+[id]:logo.png "Title"
