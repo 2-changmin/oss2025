@@ -1,4 +1,4 @@
-# oss2025
+# oss 공부
 
 
 ### 05 - Notes
@@ -8,6 +8,7 @@
 *italics*
 _italics_
 *hello*
+*how to write italics*
 
 \*literal asterisks\*
 
