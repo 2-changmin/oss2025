@@ -5,10 +5,8 @@
 
 ## Syntax
 
-*italics*
-_italics_
-*hello*
 *how to write italics*
+*hello*
 
 \*literal asterisks\*
 
