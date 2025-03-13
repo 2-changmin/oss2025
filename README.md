@@ -43,9 +43,9 @@ Click [here][id]
 
 >blockquote text
 
-'''python
+```python
 print('hello');
-'''
+```
 
 'inline_code();'
 
