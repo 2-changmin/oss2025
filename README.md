@@ -27,6 +27,7 @@ __bold__
 
 - [x] done
 - [ ] to do
+- maybe study? 
 
 <a id="anchor"></a>
 [GO to anchor](#anchor)
@@ -44,7 +45,7 @@ Click [here][id]
 >blockquote text
 
 ```python
-print('hello');
+print('i want to play the game');
 ```
 
 'inline_code();'
