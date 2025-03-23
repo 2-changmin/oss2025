@@ -30,3 +30,10 @@ https://naver.com
 
 Click [here][id]
 [id]:https://naver.com
+
+```python
+print('hello');
+```
+
+`inline_code();`
+
