@@ -40,8 +40,23 @@ https://sqlbak.com
 [Click here to web](https://sqlbak.com "sqlbak 이라는 사이트") <br>
 [Link](https://sqlbak.com "optional title")
 <br>
+
 Click [here][id]
-[id] :https://sqlbak.com
+
+[id]:http://sqlbak.com
 
 
+```python
+print('hello');
+```
+`inline_code();`
 
+
+* 마크다운 *이탤릭* 어렵지 않아요!
+* 진정한 개발자는 **깃허브**를 일기처럼 씁니다
+
+
+* 동아대학교 홈페이지는 [여기][id] 로
+  * https://www.donga.ac.kr
+
+[id]:https://www.donga.ac.kr
