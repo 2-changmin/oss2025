@@ -1,39 +1,35 @@
-# oss
+# Header1 
 
-*italics* or _italics_ <br>
-\*literal asterisks\* <br>
-**bold** or __bold__ <br>
-~~strikethrough~~ <br>
-1. first item
-2. second item
-   1. subitem
+##### header5 (\#은 5개까지)
 
-* item1
- Indent
-- item2
- + item3
+### italics체로 글자 쓰기
+*italics* ( \*내용\*) <br>
+_italics_ ( \_내용\_) <br>
+
+\*literal asterisks\*  (특수문자같은걸 문자 그대로 나타내기 위한 용도) <br>
+
+### bold체로 글자 쓰기
+**bold** (\*\*내용\*\*) <br>
+__bold__ (\_\_내용\_\_) <br>
+
+### 글자 중간에 선 긋기
+~~strikethrough~~ (\~\~내용\~\~) <br>
+
+### 순서 매기기
+1. First item
+2. Second item
+   1. Subitem
+
+* item 1
+   indent
+- item 2
+   + item 3
 
 - [x] Done
 - [ ] To do
 
----
-* * *
+
 <a id="anchor"></a>
 [Go to anchor](#anchor)
-
-# Top Header
+# Top-Header
 [Go to header](#Top-Header)
-
-https://naver.com
-
-[Link](https://naver.com"optional title")
-
-Click [here][id]
-[id]:https://naver.com
-
-```python
-print('hello');
-```
-
-`inline_code();`
-
