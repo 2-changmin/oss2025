@@ -49,7 +49,7 @@ Click [here][id]
 ```python
 print('hello');
 ```
-`inline_code();`
+`!pip install abc`
 
 
 * 마크다운 *이탤릭* 어렵지 않아요!
