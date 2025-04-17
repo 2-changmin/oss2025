@@ -6,7 +6,7 @@
 
 - Open Source Software: 누구나 **사용, 확인, 수정, 재배포**할 수 있는 소프트웨어
 - 자유(Freedom)를 사용자에게 부여
-- 관련 용어: FOSS, FLOSS, libre software
+- 관련 용어: FOSS, FLOSS, libre software, free software
 - 반의어: proprietary software, closed software
 
 ### 🔸 왜 중요한가?
