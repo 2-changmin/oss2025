@@ -69,3 +69,9 @@ Click [here][id]
 ![사진이 없습니다](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9aeHFWXHfDhJ_xzPneJlEsKVdu-tZ5vGoow&s "개사진")<br>
 
 ![사진이 없습니다](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsmvd0EV_XFPTZktz8dyG0AWDwnDxYzqTWFA&s "dongauniversity")
+
+
+Click [here][id]
+
+
+[id]:https://naver.com
