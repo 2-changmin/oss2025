@@ -3,7 +3,7 @@ import pandas as pd
 import altair as alt
 
 # CSV 파일 불러오기 및 정리
-df = pd.read_csv(r"C:\streamlit\보일러_용량별_지역별_에너지사용현황_20250512190731.csv")
+df = pd.read_csv("boiler_energy_data.csv")
 df.columns = df.iloc[0]
 df = df.drop(index=0).reset_index(drop=True)
 df_melted = df.melt(id_vars=['용량별(1)', '항목'], var_name='지역', value_name='값')
