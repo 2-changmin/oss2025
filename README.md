@@ -1,60 +1,69 @@
-# Header 12
+# oss2025 — 오픈소스 소프트웨어
 
-*italics* _italics_
+2025년 오픈소스 소프트웨어 수업에서 진행한 **공공데이터 분석·시각화 실습**과
+학습 정리를 모은 저장소입니다. Python 데이터 분석 도구(pandas, Matplotlib,
+Plotly, Altair)와 Streamlit을 사용했습니다.
 
-\*italics\*
+## 대표 결과물 — 지역별 보일러 에너지 사용현황 대시보드
 
-**bold** __bold__
+`streamlit.py` · 데이터: `boiler_energy_data.csv`
 
-~~strikethrough~~
+2023년 기준 **전국 17개 시·도의 보일러 용량별 설치 대수와 에너지 사용량(toe)**
+통계를 대화형 대시보드로 시각화했습니다.
 
-1. First item
-2. Second item
-    1. item3
-  
-* item1<br>
-   item
-* item 2
-   + item3
+**처리 과정**
 
-- [x] done
-- [ ] to do
+1. 헤더가 2행에 걸쳐 있는 통계표 원본을 `pandas`로 읽어 첫 행을 열 이름으로 승격
+2. `melt`로 지역 열들을 행으로 펼치고, 결측·비수치 값을 `to_numeric`으로 정리
+3. `pivot_table`로 `(지역, 용량별)` 기준 `대수 / 사용량` 형태로 재구성
+4. 지역·용량을 선택하면 해당 조건의 차트와 지표가 갱신되도록 구성
 
-<a id="anchor"></a>
-[Go to anchor](#anchor)
+**화면 구성**
 
-# Top Header
-[Go to header](#Top-Header)
+- 선택한 지역의 **용량별 대수·사용량 비교 막대 차트** (Altair, 툴팁 포함)
+- 선택한 지역·용량 조합의 **대수 / 사용량 요약 지표**
+- 해당 조합에 데이터가 없으면 경고 메시지 표시
 
+**실행**
 
-https://naver.com
-
-[동아대학교](https://naver.com "사실 네이버 주소입니다")
-
-[here][id]
-
-[id]:https://naver.com
-
-
-```python
-print('hello')
+```bash
+pip install streamlit pandas altair
+streamlit run streamlit.py
 ```
 
-`give me idea`
+## 데이터 분석 노트북
 
-![사진이없습니다.](https://~~ "툴팁")
+| 노트북 | 데이터 | 내용 |
+| --- | --- | --- |
+| `폐암_예측_데이터.ipynb` | Lung Cancer Dataset | 흡연·음주·오염 노출·가족력과 폐질환의 관계를 항목별로 교차 분석하고 시각화 |
+| `해외의_전기차_보유.ipynb` | Electric Vehicle Population Data | 도시별 최다 보유 전기차 모델 집계 및 모델 분포 시각화 |
+| `(실습파일)OSS2025_Mining_Hidden_Gems_on_YouTube.ipynb` | YouTube 데이터 | Plotly를 활용한 탐색적 데이터 분석 실습 |
+| `삼각형_판단하기_프로그램.ipynb` | — | 세 변의 길이로 삼각형 성립 여부와 종류를 판별하는 기초 실습 |
 
+> 네 노트북 모두 **탐색적 데이터 분석(EDA)과 시각화**에 중점을 두었으며,
+> 머신러닝 모델링은 포함하지 않았습니다.
 
+## 학습 정리
 
-동아대학교 홈페이지는 [여기][id]로<br>
-https://www.donga.ac.kr
+`학습정리/README.md` — 수업 내용을 시험 대비용으로 재구성한 요약 노트입니다.
 
+- **오픈소스 개념**: OSS의 정의와 철학, COTS와 상업성, 공공부문에서의 도입 근거
+- **라이선스**: 주요 오픈소스 라이선스의 개념과 비교
+- **프로젝트 운영**: 커뮤니티 커뮤니케이션, 기술 인프라, Brooks' Law, 메일링 리스트
+- **Git & GitHub**: 저장소 구성, 브랜치와 병합, 충돌 처리, Fork & Pull Request 협업 흐름
+- **Markdown / Slack**: 문법 정리 및 협업 도구 활용
 
-[id]:https://www.donga.ac.kr
+## 저장소 구성
 
-my github page is available [here](https://naver.com "네이버주소지롱")
+```
+├── streamlit.py                 보일러 에너지 대시보드
+├── boiler_energy_data.csv       2023년 지역별 보일러 통계 원본
+├── *.ipynb                      데이터 분석 노트북
+├── 학습정리/                     수업 요약 노트
+├── 실습/                         마크다운 문법 실습 결과물
+└── images/                       실습용 이미지
+```
 
+## 라이선스
 
-![이미지가 없습니다](https://image.utoimage.com/preview/cp872722/2022/12/202212008462_500.jpg "강아지사진")
-
-![이미지 없음](https://image.utoimage.com/preview/cp872722/2022/12/202212008462_500.jpg)
+[MIT License](LICENSE)
